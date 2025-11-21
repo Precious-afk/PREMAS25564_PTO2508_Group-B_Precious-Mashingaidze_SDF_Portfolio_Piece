@@ -1,0 +1,23 @@
+/* tiny helpers to match the Figma pixel-perfect feel */
+:root{ --radius:29.042px; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+/* ensure image fits nicely inside rounded box */
+img { display:block; max-width:100%; }
+
+/* small utility */
+.card-radius { border-radius: var(--radius); }
+.card-radius-top { border-top-left-radius: var(--radius); border-top-right-radius: var(--radius); }
+.card-radius-bottom { border-bottom-left-radius: var(--radius); border-bottom-right-radius: var(--radius); }
+
+/* project card decoration */
+.project-card { position: relative; }
+  color:rgba(215,98,57,1); /* orange color for hearts */
+
+  .heart-svg {
+    position: aligned;
+    top: 20px;         /* aligns with your date */
+    right: 20px;       /* moves away from the edge */
+    opacity: 1;
+}
